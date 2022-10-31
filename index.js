@@ -1,17 +1,29 @@
+// Variables a utilizar
+
+let nombreCliente = 0;
+let cobertura = 0;
+let relleno = 0;
+let precioAlfrajor = 0;
+let precioTotal =0;
+
+
 let nombreCliente = prompt ("ingrese su nombre");
 alert("Bienvenido/a "+ nombreCliente + " a La Alfajorera");
 
 let cobertura= prompt("¿Qué baño querés que tengan tus alfajores? Elija 1- Para Chocolate Negro, o, 2- Para Chocolate Blanco");
 
-switch (cobertura){
-    case "1":
-        alert ( nombreCliente + ' elegiste Chocolate Negro para la cobertura');
-        break;
-    case "2":
-        alert( nombreCliente + " elegiste Chocolate Blanco para la cobertura");
-        break;
-    default: alert ("Opción invalida")
-}while (cobertura =3);
+while (cobertura !="ESC"){
+    switch (cobertura){
+        case "1":
+            alert ( nombreCliente + ' elegiste Chocolate Negro para la cobertura');
+            break;
+        case "2":
+            alert( nombreCliente + " elegiste Chocolate Blanco para la cobertura");
+            break;
+        default: alert ("Opción invalida")
+    }
+    cobertura = prompt ("¿Qué baño querés que tengan tus alfajores? Elija 1- Para Chocolate Negro, o, 2- Para Chocolate Blanco");
+};
 
 let relleno = prompt (nombreCliente + " ahora toca elegir el relleno");
 
